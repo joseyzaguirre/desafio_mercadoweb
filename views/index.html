@@ -1,3 +1,5 @@
+{% from 'macro-productos.html' import catalogo_productos %}
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -13,16 +15,12 @@
                 <i class="fa-solid fa-cart-shopping text-center fa-2xl" href="#" style="color:white"></i>
             </div>
         </nav>
-        <container>
-            <div class="card" style="width: 18rem;">
-                <img src="static/banana.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </container>
+        <h1 class="text-center">Bienvenidos al mercado WEB, selecciona tus productos</h1>
+        <section class="row offset-2 py-4">
+            {% for producto in productos %}
+                {{ catalogo_productos(producto) }}
+            {% endfor %}
+        </section>
         
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

@@ -1,0 +1,13 @@
+{% macro catalogo_productos(producto) %}
+    <div class="col-4">
+        <div class="card mb-4" style="width: 18rem;">
+            <img src="{{ producto.url }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <hr>
+                <h5 class="card-title">{{ producto.nombre }}</h5>
+                <p class="card-text">Valor por kilo: ${{ producto.preciokg }}</p>
+                <a href="#" class="btn btn-warning">Agregar al carro</a>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

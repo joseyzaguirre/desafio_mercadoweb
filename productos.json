@@ -1,0 +1,34 @@
+{
+    "productos":[
+        {
+            "nombre": "Bananas",
+            "preciokg": 1000,
+            "url": "banana.png"
+        },
+        {
+            "nombre": "Cebollas",
+            "preciokg": 900,
+            "url": "cebollas.png"
+        },
+        {
+            "nombre": "Lechuga",
+            "preciokg": 1200,
+            "url": "lechuga.png"
+        },
+        {
+            "nombre": "Papas",
+            "preciokg": 1300,
+            "url": "papas.png"
+        },
+        {
+            "nombre": "Pimentón",
+            "preciokg": 1800,
+            "url": "pimenton.png"
+        },
+        {
+            "nombre": "Tomates",
+            "preciokg": 1600,
+            "url": "tomate.png"
+        }
+    ]
+}
